@@ -1,4 +1,4 @@
-# News-Website-Honeypot-
+# News-Website-Honeypot
 Developed in Flask,HTML,CSS
 You can find the project in master branch.
 Created a honeypot website simulating Ukrainian news, designed to monitor and analyze
