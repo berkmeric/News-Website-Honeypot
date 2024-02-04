@@ -1,0 +1,32 @@
+{% extends "_base.html" %}
+
+{% block content %}
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <main class="form-signin w-100 m-auto">
+      <form role="form" method="post" action="{{ url_for('accounts.recover') }}">
+        {{ form.csrf_token }}
+        <h1 class="h3 mb-3 fw-normal text-center">Password Recovery</h1>
+        <!-- Email field -->
+        <div class="form-floating">
+            {{ form.email(class_="form-control", id="floatingInput", placeholder="name@example.com") }}
+            {{ form.email.label(class_="form-label") }}
+            {% if form.email.errors %}
+                <div class="alert alert-danger">
+                    {% for error in form.email.errors %}
+                        <p>{{ error }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+        <!-- Submit button -->
+        <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Send Recovery Email</button>
+      </form>
+    </main>
+  </div>
+  <div class="col-md-4"></div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,3 @@
+1-Create a category section for the news. Add necessary part for the model. 
+2-Add admin login and assign some priveleges.
+3-Figure it out that how to delete comment from model. 
