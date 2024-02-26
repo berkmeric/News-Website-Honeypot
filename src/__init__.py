@@ -34,8 +34,8 @@ migrate = Migrate(app, db)
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
-app.config['MAIL_USERNAME'] = "berkmeric1@gmail.com"
-app.config['MAIL_PASSWORD'] = "htbx bzhl pbgb jdsa"
+app.config['MAIL_USERNAME'] = ""
+app.config['MAIL_PASSWORD'] = ""
 mail = Mail(app)
 
 s = URLSafeTimedSerializer(app.config['SECRET_KEY'])
